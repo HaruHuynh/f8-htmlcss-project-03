@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Common */
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root {
+    --primary-color: #10375c;
+    --btn-color: #2e80ce;
+}
+
+.btn {
+    display: flex;
+    min-width: 205px;
+    padding: 22px 24px;
+    border-radius: 30px;
+    border: 2px solid var(--btn-color);
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* ==================================NAVIGATION ================================== */
+.fixed-header {
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+    background: #10375c;
+}
+
+.navbar-section {
+    padding: 30px 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-section .menu-links {
+    margin-left: 318px;
+    display: flex;
+    gap: 42px;
+}
+
+.menu-links .menu-item a {
+    color: #c9d2da;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 1.75;
+    transition: color 0.2s ease;
+}
+
+.menu-links .menu-item a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.menu-links .menu-item a:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.menu-links .menu-item a:hover {
+    color: #ffffff;
+}
+
+.nav-btn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-btn .sign-in {
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 1.75;
+    transition: color 0.2s ease;
+}
+
+.nav-btn .sign-in:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nav-btn .register {
+    min-width: 104px;
+    font-size: 1.6rem;
+    border-radius: 22px;
+}
+
+.nav-btn .register:hover {
+    background: var(--btn-color);
+    color: #ffffff;
+}
