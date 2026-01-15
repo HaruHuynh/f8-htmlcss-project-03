@@ -207,28 +207,37 @@ body {
     background: #dfebfc;
 }
 
-.service-section .main-title {
+.main-title {
     max-width: 468px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.service-section .main-title .title {
+.main-title .title {
     color: #10375c;
-    text-align: center;
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2; /* 120% */
     letter-spacing: -1px;
 }
 
-.service-section .main-title .desc {
+.main-title .desc {
     margin-top: 18px;
     color: #575f66;
-    text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67; /* 166.667% */
+}
+
+.service-section .main-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-section .main-title .title {
+    text-align: center;
+}
+
+.service-section .main-title .desc {
+    text-align: center;
 }
 
 .service-section .service-wrapper {
@@ -313,4 +322,65 @@ body {
 .service-content .service-button:hover {
     background: var(--btn-color);
     color: #ffffff;
+}
+
+/* ==================================MORE================================== */
+.more-section {
+    margin-top: 105px;
+    padding: 100px 0;
+    background: #ffcbcb;
+}
+
+.more-section .more-group {
+    margin-top: 86px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.more-group .more-item {
+    padding: 43px 42px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    background: #ffffff;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.more-group .more-item .item-title {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+}
+
+.more-group .more-item .item-desc {
+    max-width: 254px;
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.more-group .more-item .item-cta {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.more-group .more-item .item-cta:hover {
+    color: var(--btn-color);
+    font-weight: 400;
+}
+
+.more-group .more-item:hover {
+    transform: translateY(-16px);
+    cursor: pointer;
+    border: 16px solid var(--btn-color);
 }
