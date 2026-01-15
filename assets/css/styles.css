@@ -384,3 +384,55 @@ body {
     cursor: pointer;
     border: 16px solid var(--btn-color);
 }
+
+/* ==================================FEATURE================================== */
+.feature {
+    margin-top: 100px;
+    padding: 70px 0px;
+    background: #eef3d9;
+}
+
+.feature-wrapper {
+    display: flex;
+}
+
+.feature-wrapper .image-group {
+    width: 50%;
+    position: relative;
+}
+
+.feature-wrapper .image-group .large-image,
+.feature-wrapper .image-group .small-image {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature-wrapper .image-group .large-image {
+    width: 512px;
+    height: 370px;
+}
+
+.feature-wrapper .image-group .small-image {
+    width: 332px;
+    height: 370px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+.feature-wrapper .content-group {
+    margin-left: 130px;
+    margin-top: 82px;
+    max-width: 470px;
+}
+
+.feature-wrapper .content-group .title {
+    color: #10375c;
+    font-size: 5rem;
+    letter-spacing: -1px;
+}
+
+.feature-wrapper .content-group .feature-button:hover {
+    background: var(--btn-color);
+    color: #ffffff;
+}
