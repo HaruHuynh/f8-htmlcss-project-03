@@ -43,7 +43,7 @@ body {
 .fixed-header {
     position: sticky;
     top: -20px;
-    z-index: 1;
+    z-index: 2;
     background: #10375c;
 }
 
@@ -188,6 +188,7 @@ body {
     height: 540px;
     border-radius: 6px;
     z-index: 1;
+    position: relative;
 }
 
 .images-container .small-img {
@@ -197,4 +198,119 @@ body {
     position: absolute;
     top: 65px;
     right: -204px;
+}
+
+/* ==================================SERVICE================================== */
+.service-section {
+    margin-top: 105px;
+    padding: 65px 0;
+    background: #dfebfc;
+}
+
+.service-section .main-title {
+    max-width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-section .main-title .title {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+
+.service-section .main-title .desc {
+    margin-top: 18px;
+    color: #575f66;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
+
+.service-section .service-wrapper {
+    margin-top: 70px;
+    display: flex;
+}
+
+.service-section .service-wrapper .service-img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service-wrapper .service-content {
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 35px;
+}
+
+.service-content .menu-item {
+    display: flex;
+}
+
+.service-content .menu-item {
+    padding: 21px 21px;
+    background: #fff;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease;
+}
+
+.service-content .menu-info {
+    margin-left: 19px;
+}
+
+.service-content .menu-info .title {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.service-content .menu-info .desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.service-content .menu-item:hover {
+    position: relative; /* to make sure the shadow appears above other elements */
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-content .menu-item .tooth-icon {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eff6fd;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.service-content .menu-item:hover .tooth-icon {
+    background: #2e80ce;
+}
+
+.service-content .menu-item:hover .tooth-icon svg path {
+    fill: #fff;
+}
+
+.service-content .service-button {
+    margin-top: 55px;
+    max-width: 205px;
+}
+
+.service-content .service-button:hover {
+    background: var(--btn-color);
+    color: #ffffff;
 }
