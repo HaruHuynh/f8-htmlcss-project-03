@@ -26,7 +26,7 @@ body {
 
 .btn {
     display: flex;
-    min-width: 205px;
+    max-width: 205px;
     padding: 22px 24px;
     border-radius: 30px;
     border: 2px solid var(--btn-color);
@@ -709,4 +709,55 @@ body {
 
 .news-item .blog-info .news-link:hover {
     color: var(--btn-color);
+}
+
+/* ==================================WELCOME================================== */
+.welcome {
+    margin-top: 85px;
+    padding: 85px 0;
+    background: #e9f0fd;
+}
+
+.welcome-wrapper {
+    padding: 100px 178px;
+}
+
+.welcome-wrapper .title {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.welcome-wrapper .below-line {
+    margin-top: 18px;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-wrapper .desc {
+    margin-top: 18px;
+    text-align: center;
+    width: 617px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+}
+
+.welcome-wrapper .welcome-button {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-wrapper .welcome-button:hover {
+    background: var(--btn-color);
+    color: #ffffff;
 }
