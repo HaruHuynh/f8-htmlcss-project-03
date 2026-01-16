@@ -555,3 +555,53 @@ body {
 .member .control-wrapper .right-button:hover svg path {
     stroke: #fff;
 }
+
+/* ==================================APPLICATION================================== */
+.app {
+    margin-top: 265px;
+    background: #2e80ce;
+}
+
+.mobile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.mobile-wrapper .mobile-image {
+    display: block;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+    object-fit: cover;
+}
+
+.mobile-wrapper .content-group {
+    max-width: 586px;
+}
+
+.mobile-wrapper .content-group .title {
+    width: 489px;
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.mobile-wrapper .content-group .desc {
+    color: #fff;
+}
+
+.mobile-wrapper .cta-download {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.mobile-wrapper .cta-download .app-store:hover,
+.mobile-wrapper .cta-download .google-play:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
