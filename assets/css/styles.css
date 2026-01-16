@@ -387,13 +387,13 @@ body {
 
 /* ==================================FEATURE================================== */
 .feature {
-    margin-top: 100px;
-    padding: 70px 0px;
+    margin-top: 170px;
     background: #eef3d9;
 }
 
 .feature-wrapper {
     display: flex;
+    padding-bottom: 83px;
 }
 
 .feature-wrapper .image-group {
@@ -435,4 +435,123 @@ body {
 .feature-wrapper .content-group .feature-button:hover {
     background: var(--btn-color);
     color: #ffffff;
+}
+
+/* ==================================MEMBER================================== */
+.member {
+    margin-top: 170px;
+}
+
+.member .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.member .title-wrapper .title {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.member .title-wrapper .member-button {
+    margin-top: 38px;
+    max-width: 205px;
+}
+
+.member .title-wrapper .member-button:hover {
+    background: var(--btn-color);
+    color: #ffffff;
+}
+
+.member .list-member {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+}
+
+.list-member .list-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.list-member .list-item .image-item {
+    width: 270px;
+    height: 290px;
+    border-radius: 6px;
+    background: #eaf6ff;
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.list-member .list-item img {
+    width: 100%;
+    height: 100%;
+    transition: 0.25s ease;
+    object-fit: contain;
+}
+
+.list-member .list-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.list-member .list-item .info-item {
+    margin-top: 12px;
+}
+
+.list-item .info-item .name {
+    text-align: center;
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.list-item .info-item .desc {
+    text-align: center;
+    color: #575f66;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+
+.member .control-wrapper {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member .control-wrapper .left-button,
+.member .control-wrapper .right-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    transition: background 0.2s ease, border 0.2s ease;
+}
+
+.member .control-wrapper .left-button:hover,
+.member .control-wrapper .right-button:hover {
+    background: var(--btn-color);
+    border: none;
+    cursor: pointer;
+}
+
+.member .control-wrapper .left-button:hover svg path,
+.member .control-wrapper .right-button:hover svg path {
+    stroke: #fff;
 }
