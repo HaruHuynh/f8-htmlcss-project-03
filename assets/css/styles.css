@@ -761,3 +761,139 @@ body {
     background: var(--btn-color);
     color: #ffffff;
 }
+
+/* ===================================FOOTER================================= */
+footer {
+    margin-top: 85px;
+    padding: 100px 135px 42px 135px;
+    background: var(--primary-color);
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 78px;
+}
+
+.footer-wrapper .logo-desc {
+    width: 336px;
+    margin-top: 21px;
+    color: #a9b3bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column .title {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    margin-bottom: 28px;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #a9b3bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.media-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.media-group .media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    transition: background 0.2s ease, border 0.2s ease;
+}
+
+.media-group .media-icon:hover {
+    background: var(--btn-color);
+    cursor: pointer;
+}
+.media-group .media-icon:hover svg path {
+    fill: #fff;
+}
+
+.footer-column .subtitle {
+    width: 273px;
+    color: #a9b3bb;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer-column .email-box {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.footer-column .email-box .input-email {
+    width: 212px;
+    padding: 10px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+}
+
+.footer-column .email-box .sub-button {
+    width: 108px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-column .email-box .sub-button:hover {
+    background: var(--btn-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.foot-line {
+    width: 1170px;
+    height: 1px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.copyright {
+    margin-top: 28px;
+    color: #aab3ba;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
