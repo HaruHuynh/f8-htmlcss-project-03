@@ -267,6 +267,10 @@ body {
     transition: box-shadow 0.2s ease;
 }
 
+.service__item:not(:last-child) {
+    margin-bottom: 2px;
+}
+
 .service__info {
     margin-left: 19px;
 }
@@ -324,7 +328,9 @@ body {
 
 /* ==================================PROCESS================================== */
 .process {
-    margin-top: 96px;
+    margin-top: 105px;
+    background: #fefefe;
+    padding: 100px 0;
 }
 
 .process__header {
@@ -403,8 +409,8 @@ body {
 
 /* ==================================FEATURE================================== */
 .feature {
-    margin-top: 100px;
-    padding: 70px 0;
+    margin-top: 105px;
+    padding: 65px 0;
     background: #dfebfc;
 }
 
@@ -472,8 +478,8 @@ body {
 
 /* ==================================TEAM================================== */
 .team {
-    margin-top: 50px;
-    padding: 50px 0;
+    margin-top: 40px;
+    padding: 65px 0;
     background: #fff;
 }
 
@@ -593,7 +599,8 @@ body {
 
 /* ==================================APP================================== */
 .app {
-    margin-top: 265px;
+    margin-top: 40px;
+    padding: 65px 0 0 0;
     background: #2e80ce;
 }
 
@@ -651,8 +658,8 @@ body {
 
 /* ==================================NEWS================================== */
 .news {
-    margin-top: 85px;
-    padding: 85px 0;
+    margin-top: 105px;
+    padding: 65px 0;
     background: #dfebfc;
 }
 
@@ -789,9 +796,9 @@ body {
 
 /* ==================================WELCOME================================== */
 .welcome {
-    margin-top: 85px;
-    padding: 85px 0;
-    background: #e9f0fd;
+    margin-top: 40px;
+    padding: 65px 0;
+    background: #fff;
 }
 
 .welcome__container {
@@ -841,7 +848,7 @@ body {
 
 /* ===================================FOOTER================================= */
 .footer {
-    margin-top: 85px;
+    margin-top: 105px;
     padding: 100px 135px 42px 135px;
     background: var(--primary-color);
 }
